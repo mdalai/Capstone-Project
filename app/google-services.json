@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "667725983287",
+    "firebase_url": "https://trackvan-a3baa.firebaseio.com",
+    "project_id": "trackvan-a3baa",
+    "storage_bucket": "trackvan-a3baa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667725983287:android:bcabc65bd33739aa",
+        "android_client_info": {
+          "package_name": "com.mingatsoftware.trackvan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667725983287-a4alq88r9fm8u9atpeeal0lbib4jr3nd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mingatsoftware.trackvan",
+            "certificate_hash": "c70ea3542410a45a498ea5201e00fc0d4a9406c9"
+          }
+        },
+        {
+          "client_id": "667725983287-9p37toe0d67ore5sks1sir5v818031am.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYC6QPL21FD-r_L9-2PaKH_UAxlrAcYYM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667725983287-9p37toe0d67ore5sks1sir5v818031am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

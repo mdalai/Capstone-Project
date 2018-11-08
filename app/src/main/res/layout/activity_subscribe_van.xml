@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SubscribeVanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sub_van_search_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/label_text_margin"
+            android:layout_marginRight="@dimen/label_text_margin"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/sub_van_search_input_hint"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/sub_van_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onClickFindVan"
+            android:text="@string/sub_van_search_button_name" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sub_van_display_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/label_text_margin"
+            android:layout_marginRight="@dimen/label_text_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub_van_name_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/sub_van_name_label" />
+
+            <TextView
+                android:id="@+id/sub_van_model_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/sub_van_model_label" />
+
+            <TextView
+                android:id="@+id/sub_van_year_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/sub_van_year_label" />
+
+            <TextView
+                android:id="@+id/sub_van_license_label_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="@string/sub_van_license_label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/label_text_margin"
+            android:layout_marginRight="@dimen/label_text_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sub_van_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="@sample/subjects.json/data/name" />
+
+            <TextView
+                android:id="@+id/sub_van_model_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="@sample/subjects.json/data/model" />
+
+            <TextView
+                android:id="@+id/sub_van_year_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="@sample/subjects.json/data/year" />
+
+            <TextView
+                android:id="@+id/sub_van_license_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:text="@sample/subjects.json/data/plate" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sub_van_submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSubmitVan"
+        android:text="@string/sub_van_submit_button_name" />
+
+
+</LinearLayout>

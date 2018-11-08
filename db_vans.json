@@ -1,0 +1,39 @@
+{
+  "vans" : {
+    "XYY501" : {
+      "name" : "LW Gray Van",
+      "model" : "Ford Transit",
+      "year" : "2010"
+    },
+    "XYY502" : {
+      "name" : "LW White",
+      "model" : "Chevrolet Express",
+      "year" : "2011"
+    },
+    "XYY503" : {
+      "name" : "LW Black Wolf", 
+      "model":"Toyota Sienna", 
+      "year":"2009"
+    },
+    "XYY504" : {
+      "name" : "CUW Shuttle1", 
+      "model":"Nissan Quest", 
+      "year":"2011"
+    },
+    "XYY505" : {
+      "name" : "CUW student van", 
+      "model":"GMC Savana", 
+      "year":"2018"
+    },
+    "XYY506" : {
+      "name" : "CUW new van", 
+      "model":"Chevrolet Astro", 
+      "year":"2011"
+    },
+    "XYY507" : {
+      "name" : "OCDE van", 
+      "model":"Dodge Caravan", 
+      "year":"2012"
+    }
+  }
+}

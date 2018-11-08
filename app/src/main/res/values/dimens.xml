@@ -1,0 +1,21 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="cardview_space_margin">5dp</dimen>
+    <dimen name="cardview_elevation">2dp</dimen>
+
+
+
+    <!-- Subscribe Van Activity -->
+    <dimen name="sub_van_display_height">350dp</dimen>
+
+    <dimen name="label_text_margin">10dp</dimen>
+    <dimen name="label_width">120dp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="subtitle_text_size">16sp</dimen>
+    <dimen name="body_text_size">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
