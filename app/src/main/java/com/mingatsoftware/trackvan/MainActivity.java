@@ -1,5 +1,6 @@
 package com.mingatsoftware.trackvan;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -352,7 +353,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         // An unresolvable error has occurred and Google APIs (including Sign-In) will not be available.
-        Log.d(TAG, "onConnectionFailed:" + connectionResult);
-        Toast.makeText(this, "Google Play Services error.", Toast.LENGTH_SHORT).show();
+        Log.d(TAG, getString (R.string.connection_fail_log) + String.valueOf (connectionResult));
+        Toast.makeText(this, getString (R.string.connection_fail_toast), Toast.LENGTH_SHORT).show();
     }
 }

@@ -25,6 +25,19 @@
     <string name="return_van_mileage_label">Return Mileage</string>
     <string name="return_van_submit_button_name">Return</string>
 
+    <!-- Strings related to Firebase Connection -->
+    <string name="connection_fail_log">onConnectionFailed:</string>
+    <string name="connection_fail_toast">Google Play Services error.</string>
+    <string name="firebase_data_fail_insue">Pull INUSE data failed!</string>
+    <string name="firebase_data_fail_load">loadData:onCancelled</string>
+
+    <string name="fab_content_desc">Add New Van</string>
+
+    <!-- Strings related to Widget -->
+    <string name="widget_app_name">TrackVan</string>
+    <string name="widget_id">10</string>
+    <string name="widget_list_item_text">VAN_ID XYZ</string>
+
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -35,10 +48,10 @@
     <string name="error_invalid_password">This password is too short</string>
     <string name="error_incorrect_password">This password is incorrect</string>
     <string name="error_field_required">This field is required</string>
-    <string name="permission_rationale">"Contacts permissions are needed for providing email
-        completions."
-    </string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions." </string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>

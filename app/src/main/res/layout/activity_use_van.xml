@@ -12,6 +12,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <ImageView
+            android:id="@+id/van_imageView"
+            android:layout_width="@dimen/van_image_width"
+            android:layout_height="@dimen/van_image_height"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_light_focused" />
+
         <TextView
             android:id="@+id/activity_use_van_name_tv"
             android:layout_width="match_parent"

@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="@dimen/label_text_margin"
                     android:layout_weight="0.3"
-                    android:gravity="right"
+                    android:gravity="end"
                     android:orientation="vertical">
 
                     <TextView
@@ -104,7 +104,6 @@
                         android:id="@+id/user_van_label2_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         tools:text="@sample/subjects.json/data/label2" />
 
@@ -112,7 +111,6 @@
                         android:id="@+id/user_van_label3_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         tools:text="@sample/subjects.json/data/label3" />
 
@@ -128,7 +126,6 @@
                         android:id="@+id/user_van_val1_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         tools:text="@sample/subjects.json/data/val1" />
 
@@ -136,7 +133,6 @@
                         android:id="@+id/user_van_val2_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         tools:text="@sample/subjects.json/data/val2" />
 
@@ -144,7 +140,6 @@
                         android:id="@+id/user_van_val3_tv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TextView"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         tools:text="@sample/subjects.json/data/val3" />
 

@@ -114,7 +114,7 @@ public class ReturnVanFragment extends Fragment implements View.OnClickListener 
                     inUse = dataSnapshot.child ("inUse").getValue (Van.InUse.class);
                     //Log.d ("MY-DEBUG", "USER ID: "+ inUse.getDepartment ());
                 } else {
-                    Log.d (TAG, "Pull INUSE data failed!");
+                    Log.d (TAG, getString (R.string.firebase_data_fail_insue));
                 }
             }
 

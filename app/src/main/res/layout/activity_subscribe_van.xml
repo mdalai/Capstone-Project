@@ -50,28 +50,28 @@
                 android:id="@+id/sub_van_name_label_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:text="@string/sub_van_name_label" />
 
             <TextView
                 android:id="@+id/sub_van_model_label_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:text="@string/sub_van_model_label" />
 
             <TextView
                 android:id="@+id/sub_van_year_label_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:text="@string/sub_van_year_label" />
 
             <TextView
                 android:id="@+id/sub_van_license_label_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="right"
+                android:gravity="end"
                 android:text="@string/sub_van_license_label" />
         </LinearLayout>
 
