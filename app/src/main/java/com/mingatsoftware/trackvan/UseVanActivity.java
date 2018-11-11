@@ -118,14 +118,14 @@ public class UseVanActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Log.w(TAG, getString (R.string.firebase_data_fail_load), databaseError.toException());
+                Log.w(TAG, getString (R.string.firebase_data_load_fail_log_text), databaseError.toException());
             }
         });
 
     }
 
 
-    private class DownloadImageTask extends AsyncTask<ImageView, Void, Bitmap> {
+    private static class DownloadImageTask extends AsyncTask<ImageView, Void, Bitmap> {
 
         ImageView imageView = null;
 

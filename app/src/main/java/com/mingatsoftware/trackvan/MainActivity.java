@@ -72,14 +72,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                     mClickListener.onItemClick(view, getAdapterPosition ());
                 }
             });
-            /*
-            itemView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    mClickListener.onItemLongClick(v, getAdapterPosition());
-                    return true;
-                }
-            }); */
         }
 
         private VanViewHolder.ClickListener mClickListener;
@@ -110,9 +102,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
     // Firebase instance variables
     private FirebaseAuth mFirebaseAuth;
     private FirebaseUser mFirebaseUser;
-    private DatabaseReference mFirebaseDatabaseReference;
-    private RecyclerView mVanRecyclerView;
-    private LinearLayoutManager mLinearLayoutManager;
+    DatabaseReference mFirebaseDatabaseReference;
+    RecyclerView mVanRecyclerView;
+    LinearLayoutManager mLinearLayoutManager;
     private FirebaseRecyclerAdapter<Van, VanViewHolder> mFirebaseAdapter;
 
     private DatabaseReference mVansRef;
@@ -155,8 +147,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                 .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API)
                 .build();
-        //Log.d(TAG, "Login username:" + mUsername + " uid: " + mFirebaseUser.getUid ());
-
 
         // populate RecyclerView with Firebase-UI-database -----------------------------------------------------------
         mVanRecyclerView = (RecyclerView ) findViewById (R.id.vanRecyclerView);
@@ -197,9 +187,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
                     holder.itemView.setBackgroundColor (getResources ().getColor (R.color.colorVanDisabled));
                     holder.itemView.setClickable (false);
 
-                    holder.vanLabel1_tv.setText ("Using Dept");
-                    holder.vanLabel2_tv.setText ("Started");
-                    holder.vanLabel3_tv.setText ("Will Return in");
+                    holder.vanLabel1_tv.setText (getString (R.string.van_label_1_text));
+                    holder.vanLabel2_tv.setText (getString (R.string.van_label_2_text));
+                    holder.vanLabel3_tv.setText (getString (R.string.van_label_3_text));
                     holder.vanVal1_tv.setText (model.getInUse ().getDepartment ());
                     holder.vanVal2_tv.setText (String.valueOf (model.getInUse ().getStartTimeLong ()));
                     holder.vanVal3_tv.setText (String.valueOf (model.getInUse ().getWillReturn ()));
@@ -298,24 +288,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
         mFirebaseAdapter.stopListening();
     }
 
-    /*
-    @Override
-    public void onPause() {
-        mFirebaseAdapter.stopListening();
-        super.onPause();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        mFirebaseAdapter.startListening();
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
-    */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -326,16 +298,6 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.O
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        /*
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId ();
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected (item); */
 
         switch (item.getItemId()) {
             case R.id.sign_out_menu:

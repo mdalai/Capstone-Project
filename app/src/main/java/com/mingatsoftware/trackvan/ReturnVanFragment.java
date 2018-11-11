@@ -56,10 +56,6 @@ public class ReturnVanFragment extends Fragment implements View.OnClickListener 
     private String mVanId;
 
 
-    public ReturnVanFragment() {
-        // Required empty public constructor
-    }
-
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -112,9 +108,8 @@ public class ReturnVanFragment extends Fragment implements View.OnClickListener 
             public void onDataChange(DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists ()){
                     inUse = dataSnapshot.child ("inUse").getValue (Van.InUse.class);
-                    //Log.d ("MY-DEBUG", "USER ID: "+ inUse.getDepartment ());
                 } else {
-                    Log.d (TAG, getString (R.string.firebase_data_fail_insue));
+                    Log.d (TAG, getString (R.string.firebase_data_load_fail_log_text));
                 }
             }
 

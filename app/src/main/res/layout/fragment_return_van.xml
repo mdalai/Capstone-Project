@@ -15,9 +15,9 @@
             android:id="@+id/return_van_mileage_label_tv"
             android:layout_width="@dimen/label_width"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
-            android:gravity="right"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
+            android:gravity="end"
             android:text="@string/return_van_mileage_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 

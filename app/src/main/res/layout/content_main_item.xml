@@ -33,7 +33,7 @@
                 android:id="@+id/user_van_name_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="15dp"
+                android:padding="@dimen/cardview_title_padding"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
                 tools:text="@sample/subjects.json/data/name" />
 
@@ -88,10 +88,11 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="@dimen/label_text_margin"
+                    android:layout_marginEnd="@dimen/label_text_margin"
                     android:layout_weight="0.3"
                     android:gravity="end"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:layout_marginRight="@dimen/label_text_margin">
 
                     <TextView
                         android:id="@+id/user_van_label1_tv"

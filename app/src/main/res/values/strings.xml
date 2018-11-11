@@ -6,6 +6,10 @@
     <string name="trackvan_van_icon_desc">Van Icon</string>
     <string name="title_activity_sign_in">Sign in</string>
 
+    <!-- MainActivity -->
+    <string name="van_label_1_text">Using Dept</string>
+    <string name="van_label_2_text">Started</string>
+    <string name="van_label_3_text">Will Return in</string>
 
     <!-- Subscribe Van Activity -->
     <string name="sub_van_search_input_hint">Van ID # </string>
@@ -25,11 +29,21 @@
     <string name="return_van_mileage_label">Return Mileage</string>
     <string name="return_van_submit_button_name">Return</string>
 
+    <!-- SignInActivity -->
+    <string name="login_failed_log_text">onConnectionFailed</string>
+    <string name="login_failed_toast_text">Google Play Services error.</string>
+    <string name="signin_failed_log_text">Google Sign-In failed.</string>
+    <string name="signin_with_credential_status">signInWithCredential:onComplete:</string>
+    <string name="signin_with_credential_fail_log_text">signInWithCredential</string>
+    <string name="signin_with_credential_fail_toast_text">Authentication failed.</string>
+
+    <!-- SubscribeVanActivity -->
+
     <!-- Strings related to Firebase Connection -->
     <string name="connection_fail_log">onConnectionFailed:</string>
     <string name="connection_fail_toast">Google Play Services error.</string>
-    <string name="firebase_data_fail_insue">Pull INUSE data failed!</string>
-    <string name="firebase_data_fail_load">loadData:onCancelled</string>
+    <string name="firebase_data_fail_toast_text">Pull data fail </string>
+    <string name="firebase_data_load_fail_log_text">loadData:onCancelled</string>
 
     <string name="fab_content_desc">Add New Van</string>
 

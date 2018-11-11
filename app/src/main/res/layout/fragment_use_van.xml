@@ -15,9 +15,9 @@
             android:id="@+id/use_van_start_mileage_label_tv"
             android:layout_width="@dimen/label_width"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
-            android:gravity="right"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
+            android:gravity="end"
             android:text="@string/use_van_start_mileage_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
         <EditText
@@ -37,9 +37,9 @@
             android:id="@+id/use_van_destination_label_tv"
             android:layout_width="@dimen/label_width"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
-            android:gravity="right"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
+            android:gravity="end"
             android:text="@string/use_van_destination_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
         <EditText
@@ -58,9 +58,9 @@
             android:id="@+id/use_van_department_label_tv"
             android:layout_width="@dimen/label_width"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
-            android:gravity="right"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
+            android:gravity="end"
             android:text="@string/use_van_department_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
         <EditText
@@ -80,11 +80,11 @@
             android:id="@+id/use_van_will_return_label_tv"
             android:layout_width="@dimen/label_width"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="end"
             android:text="@string/use_van_will_return_label"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"/>
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"/>
         <EditText
             android:id="@+id/use_van_will_return_et"
             android:layout_width="wrap_content"

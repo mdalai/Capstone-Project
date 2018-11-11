@@ -2,6 +2,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="cardview_space_margin">5dp</dimen>
     <dimen name="cardview_elevation">2dp</dimen>
+    <dimen name="cardview_title_padding">15dp</dimen>
 
 
     <!-- Subscribe Van Activity -->

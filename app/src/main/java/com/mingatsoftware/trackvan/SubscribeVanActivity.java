@@ -24,6 +24,8 @@ import java.util.Date;
 
 public class SubscribeVanActivity extends AppCompatActivity {
 
+    private static final String TAG = "ReturnVanFragment";
+
     EditText mVanId_et;
     String mVanId;
     TextView mModel_tv;
@@ -33,10 +35,10 @@ public class SubscribeVanActivity extends AppCompatActivity {
     Button mSubmit_btn;
 
     // Firebase instance variables
-    private FirebaseAuth mFirebaseAuth;
-    private FirebaseUser mFirebaseUser;
-    private String mUid;
-    private DatabaseReference mFirebaseDatabaseReference;
+    FirebaseAuth mFirebaseAuth;
+    FirebaseUser mFirebaseUser;
+    String mUid;
+    DatabaseReference mFirebaseDatabaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,7 @@ public class SubscribeVanActivity extends AppCompatActivity {
         setContentView (R.layout.activity_subscribe_van);
 
         mVanId_et = (EditText)findViewById (R.id.sub_van_search_et);
-        mVanId_et.setText ("XYY501");
+        //mVanId_et.setText ("XYY501");
         mModel_tv = (TextView)findViewById (R.id.sub_van_model_tv);
         mYear_tv = (TextView)findViewById (R.id.sub_van_year_tv);
         mName_tv = (TextView)findViewById (R.id.sub_van_name_tv);
@@ -84,13 +86,13 @@ public class SubscribeVanActivity extends AppCompatActivity {
                     //for (DataSnapshot vans : dataSnapshot.getChildren()) { Log.d("MYDEBUG", "Key:" +  vans.getKey () + " | Value: " + vans.getValue ());}
                 } else {
                     mSubmit_btn.setEnabled (false);
-                    Toast.makeText(getApplicationContext (), "VanId ["+ mVanId + "] does not exist!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext (), getString (R.string.firebase_data_fail_toast_text)+ mVanId , Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-                Log.w("MYDEBUG", "loadPost:onCancelled", databaseError.toException());
+                Log.w(TAG, getString (R.string.firebase_data_load_fail_log_text), databaseError.toException());
             }
         });
     }

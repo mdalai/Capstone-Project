@@ -16,8 +16,8 @@
             android:id="@+id/sub_van_search_et"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
             android:layout_weight="1"
             android:ems="10"
             android:hint="@string/sub_van_search_input_hint"
@@ -42,8 +42,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
             android:orientation="vertical">
 
             <TextView
@@ -78,8 +78,8 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/label_text_margin"
-            android:layout_marginRight="@dimen/label_text_margin"
+            android:layout_marginStart="@dimen/label_text_margin"
+            android:layout_marginEnd="@dimen/label_text_margin"
             android:orientation="vertical">
 
             <TextView
